@@ -2,7 +2,8 @@ import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
-import {StyledTimeline} from "../src/components/Timeline";
+import Timeline, {StyledTimeline} from "../src/components/Timeline";
+import Banner from "../src/components/Banner";
 
 function HomePage() {
     const estilosDaHomePage = { 
@@ -19,11 +20,14 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1
             }}>
+                <Banner></Banner>
                 <Menu></Menu>
                 <Header></Header>
                 <Timeline playlists={config.playlists}>
                     Conteudo
                 </Timeline>
+
+                
             </div>
         </>
 
@@ -77,37 +81,3 @@ function Header() {
     )
 }
 
-function Timeline(props) {
-    // console.log("Dentro do componente", props.playlists);
-    const playlistNames = Object.keys(props.playlists);
-    // Statement
-    // Retorno por expressão
-    return (
-        <StyledTimeline>
-            {
-                playlistNames.map((playlistNames) => {
-                    const videos = props.playlists[playlistNames]
-                    console.log(playlistNames)
-                    console.log(videos)
-                    return (
-                        <section>
-                            <h2>{playlistNames}</h2>
-                            <div>
-                                {videos.map((video) => {
-                                    return (
-                                        <a href={video.url}>
-                                            <img src={video.thumb} />
-                                            <span>
-                                                {video.title}
-                                            </span>
-                                        </a>
-                                    )
-                                })}
-                            </div>
-                        </section>
-                    )
-                })
-            }
-        </StyledTimeline>
-    )
-}

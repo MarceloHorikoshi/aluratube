@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTimeline = styled.div`
+const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
@@ -44,4 +44,46 @@ export const StyledTimeline = styled.div`
       }
     }
   }
+  .favoritosImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .favoritosNome{
+    font-family: cursive;
+  }
 `;
+
+export default function Timeline(props) {
+  // console.log("Dentro do componente", props.playlists);
+  const playlistNames = Object.keys(props.playlists);
+  let estiloFavoritos
+  // Statement
+  // Retorno por expressão
+  return (
+      <StyledTimeline>
+          {
+              playlistNames.map((playlistName) => {
+                  const videos = props.playlists[playlistName]
+                  return (
+                      <section>
+                          <h2>{playlistName}</h2>
+                          <div>
+                              {videos.map((video) => {
+                                  return (                                    
+                                      <a href={video.url}>                                          
+                                          <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg":"default"} src={video.thumb} />
+                                          <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome":"default"}>
+                                              {video.title}
+                                          </span>
+                                      </a>
+                                  )
+                              })}
+                          </div>
+                      </section>
+                  )
+              })
+          }
+      </StyledTimeline>
+  )
+}

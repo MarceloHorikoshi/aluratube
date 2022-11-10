@@ -2,6 +2,8 @@
     "name": "Marcelo Horikoshi",
     "description": "Python Junior Developer",
     "github": "MarceloHorikoshi",
+    "bannerUrl":"/static/images/banner/banner_topo.jpg",
+
     "playlists": {
         "jogos": [
             {
@@ -127,6 +129,18 @@
                 "title": "O que é o C#? #HipstersPontoTube",
                 "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
+            }
+        ],
+        "aluraTubesFavoritos":[
+            {
+                "title":"@MarceloHorikoshi",
+                "url": "https://github.com/MarceloHorikoshi",
+                "thumb": "https://github.com/MarceloHorikoshi.png"
+            },
+            {
+                "title":"@RodrigoViannini",
+                "url": "https://github.com/rodrigoviannini",
+                "thumb": "https://github.com/rodrigoviannini.png"
             }
         ]
     }
