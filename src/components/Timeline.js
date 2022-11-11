@@ -57,7 +57,6 @@ const StyledTimeline = styled.div`
 export default function Timeline({ searchValue, ...props }) {
   // console.log("Dentro do componente", props.playlists);
   const playlistNames = Object.keys(props.playlists);
-  let estiloFavoritos
   // Statement
   // Retorno por expressão
   return (
@@ -66,7 +65,7 @@ export default function Timeline({ searchValue, ...props }) {
         playlistNames.map((playlistName) => {
           const videos = props.playlists[playlistName]
           return (
-            <section>
+            <section key={playlistName}>
               <h2>{playlistName}</h2>
               <div>
                 {videos.filter((video) => {
@@ -75,7 +74,7 @@ export default function Timeline({ searchValue, ...props }) {
                   return titleNormalized.includes(searchvalueNormalized)
                 }).map((video) => {
                   return (
-                    <a href={video.url}>
+                    <a key={video.url} href={video.url}>
                       <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
                       <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome" : "default"}>
                         {video.title}

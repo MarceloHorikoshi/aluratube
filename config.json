@@ -163,11 +163,17 @@
 
             {
                 "title":"@rytsutsumiuchi",
-                "url": " https://github.com/rytsutsumiuchi",
+                "url": "https://github.com/rytsutsumiuchi",
                 "thumb": "https://github.com/rytsutsumiuchi.png"
+            },
+
+            {
+                "title":"@TheAlanK",
+                "url": "https://github.com/TheAlanK",
+                "thumb": "https://github.com/TheAlanK.png"
             }
 
-           
+            
         ]
     }
 }
