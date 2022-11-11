@@ -68,20 +68,21 @@ export default function Timeline({ searchValue, ...props }) {
             <section key={playlistName}>
               <h2>{playlistName}</h2>
               <div>
-                {videos.filter((video) => {
-                  const titleNormalized = video.title.toLowerCase();
-                  const searchvalueNormalized = video.title.toLowerCase();
-                  return titleNormalized.includes(searchvalueNormalized)
-                }).map((video) => {
-                  return (
-                    <a key={video.url} href={video.url}>
-                      <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
-                      <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome" : "default"}>
-                        {video.title}
-                      </span>
-                    </a>
-                  )
-                })}
+                {videos
+                  .filter((video) => {
+                    const titleNormalized = video.title.toLowerCase();
+                    const searchValueNormalized = searchValue.toLowerCase();
+                    return titleNormalized.includes(searchValueNormalized)
+                  }).map((video) => {
+                    return (
+                      <a key={video.url} href={video.url}>
+                        <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
+                        <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome" : "default"}>
+                          {video.title}
+                        </span>
+                      </a>
+                    )
+                  })}
               </div>
             </section>
           )
