@@ -2,7 +2,7 @@
     "name": "Marcelo Horikoshi",
     "description": "Python Junior Developer",
     "github": "MarceloHorikoshi",
-    "bannerUrl":"/static/images/banner/banner_topo.jpg",
+    "bannerUrl":"https://images.unsplash.com/photo-1552083940-86877723de7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
 
     "playlists": {
         "curiosidades": [
@@ -159,7 +159,15 @@
                 "title":"@joaofv",
                 "url": "https://github.com/joaofv",
                 "thumb": "https://github.com/joaofv.png"
+            },
+
+            {
+                "title":"@rytsutsumiuchi",
+                "url": " https://github.com/rytsutsumiuchi",
+                "thumb": "https://github.com/rytsutsumiuchi.png"
             }
+
+           
         ]
     }
 }

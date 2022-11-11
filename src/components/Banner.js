@@ -1,21 +1,23 @@
-import styled from "styled-components";
-import config from "../../config.json";
+//TESTE CRIACAO BANNER
 
-const StyledBanner = styled.header`
-    .banner{
-        width: 100%;
-        height: 300px;
-    }
-`;
+// import styled from "styled-components";
+// import config from "../../config.json";
 
-export default function Banner(){
+// const StyledBanner = styled.header`
+//     .banner{
+//         width: 100%;
+//         height: 300px;
+//     }
+// `;
 
-    const linkUrl = config.bannerUrl
-    console.log(`Testando link  ${linkUrl}`)
+// export default function Banner(){
 
-    return(
-        <StyledBanner>
-            <img className="banner" src={linkUrl}/>
-        </StyledBanner>
-    );
-}
+//     const linkUrl = config.bannerUrl
+//     console.log(`Testando link  ${linkUrl}`)
+
+//     return(
+//         <StyledBanner>
+//             <img className="banner" src={linkUrl}/>
+//         </StyledBanner>
+//     );
+// }

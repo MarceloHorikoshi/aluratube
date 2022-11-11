@@ -1,14 +1,17 @@
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
-import Menu from "../src/components/Menu";
-import Timeline, {StyledTimeline} from "../src/components/Timeline";
-import Banner from "../src/components/Banner";
+import Menu from "../src/components/Menu/Menu";
+import Timeline from "../src/components/Timeline";
+// import Banner from "../src/components/Banner";
 
 function HomePage() {
-    const estilosDaHomePage = { 
+    const estilosDaHomePage = {
         // backgroundColor: "red" 
     };
+
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     // console.log(config.playlists);
 
@@ -20,14 +23,16 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1
             }}>
-                <Banner></Banner>
-                <Menu></Menu>
+                {/* <Banner></Banner> */}
+
+                {/*Propriedade Drilling */}
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header></Header>
-                <Timeline playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists} >
                     Conteudo
                 </Timeline>
 
-                
+
             </div>
         </>
 
@@ -47,7 +52,6 @@ export default HomePage
 
 const StyledHeader = styled.div`
     .user-info {
-        margin-top: 50px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -61,10 +65,20 @@ const StyledHeader = styled.div`
         border-radius: 50%;
     }
 `;
+
+const StyledBanner = styled.div`
+    background-color: blue;
+    /* background-image: url({config.bannerUrl}); */
+    background-image: url(${({bannerUrl}) => bannerUrl});
+    height: 230px;
+    width: auto;
+`;
+
+
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner" /> */}
+            <StyledBanner bannerUrl={config.bannerUrl}/>
 
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />

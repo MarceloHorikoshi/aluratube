@@ -54,36 +54,41 @@ const StyledTimeline = styled.div`
   }
 `;
 
-export default function Timeline(props) {
+export default function Timeline({ searchValue, ...props }) {
   // console.log("Dentro do componente", props.playlists);
   const playlistNames = Object.keys(props.playlists);
   let estiloFavoritos
   // Statement
   // Retorno por expressão
   return (
-      <StyledTimeline>
-          {
-              playlistNames.map((playlistName) => {
-                  const videos = props.playlists[playlistName]
+    <StyledTimeline>
+      {
+        playlistNames.map((playlistName) => {
+          const videos = props.playlists[playlistName]
+          return (
+            <section>
+              <h2>{playlistName}</h2>
+              <div>
+                {videos.filter((video) => {
+                  const titleNormalized = video.title.toLowerCase();
+                  const searchvalueNormalized = video.title.toLowerCase();
+                  return titleNormalized.includes(searchvalueNormalized)
+                }).map((video) => {
                   return (
-                      <section>
-                          <h2>{playlistName}</h2>
-                          <div>
-                              {videos.map((video) => {
-                                  return (                                    
-                                      <a href={video.url}>                                          
-                                          <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg":"default"} src={video.thumb} />
-                                          <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome":"default"}>
-                                              {video.title}
-                                          </span>
-                                      </a>
-                                  )
-                              })}
-                          </div>
-                      </section>
+                    <a href={video.url}>
+                      <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
+                      <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome" : "default"}>
+                        {video.title}
+                      </span>
+                    </a>
                   )
-              })
-          }
-      </StyledTimeline>
+                })}
+              </div>
+            </section>
+          )
+        })
+      }
+    </StyledTimeline>
   )
 }
+
