@@ -44,14 +44,7 @@ const StyledTimeline = styled.div`
       }
     }
   }
-  .favoritosImg{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  .favoritosNome{
-    font-family: cursive;
-  }
+  
 `;
 
 export default function Timeline({ searchValue, ...props }) {
@@ -76,8 +69,8 @@ export default function Timeline({ searchValue, ...props }) {
                   }).map((video) => {
                     return (
                       <a key={video.url} href={video.url}>
-                        <img className={playlistName === "aluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
-                        <span className={playlistName === "aluraTubesFavoritos" ? "favoritosNome" : "default"}>
+                        <img className={playlistName === "AluraTubesFavoritos" ? "favoritosImg" : "default"} src={video.thumb} />
+                        <span className={playlistName === "AluraTubesFavoritos" ? "favoritosNome" : "default"}>
                           {video.title}
                         </span>
                       </a>

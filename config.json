@@ -9,37 +9,37 @@
             {
                 "title": "Como o café te manipula",
                 "url": "https://www.youtube.com/watch?v=pd28XMtgQys&t=303s",
-                "thumb": "https://img.youtube.com/vi/pd28XMtgQys/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/pd28XMtgQys/hqdefault.jpg"
             },
             {
                 "title": "O que os gênios têm em comum, segundo professor de Yale",
                 "url": "https://www.youtube.com/watch?v=N6GIkmRGUTY",
-                "thumb": "https://img.youtube.com/vi/N6GIkmRGUTY/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/N6GIkmRGUTY/hqdefault.jpg"
             },
             {
                 "title": "De onde vem o câncer e por que não desapareceu com a evolução? | Ouça 18 minutos",
                 "url": "https://www.youtube.com/watch?v=twqQegMxVsI",
-                "thumb": "https://img.youtube.com/vi/twqQegMxVsI/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/twqQegMxVsI/hqdefault.jpg"
             },
             {
                 "title": "A biodiversidade é importante?",
                 "url": "https://www.youtube.com/watch?v=ctknqxY49hM",
-                "thumb": "https://img.youtube.com/vi/ctknqxY49hM/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/ctknqxY49hM/hqdefault.jpg"
             },
             {
                 "title": "Como o Brasil produz tanto e tem tanta fome?",
                 "url": "https://www.youtube.com/watch?v=UmOXb5zLqJQ",
-                "thumb": "https://img.youtube.com/vi/UmOXb5zLqJQ/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/UmOXb5zLqJQ/hqdefault.jpg"
             },
             {
                 "title": "Os efeitos da beterraba no coração, cérebro e exercício",
                 "url": "https://www.youtube.com/watch?v=dT1j_nhI9Zk",
-                "thumb": "https://img.youtube.com/vi/dT1j_nhI9Zk/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/dT1j_nhI9Zk/hqdefault.jpg"
             },
             {
                 "title": "Da imunidade à mente: a importância dos micróbios intestinais",
                 "url": "https://youtube.com/watch?v=d2TZNhz2KHo",
-                "thumb": "https://img.youtube.com/vi/d2TZNhz2KHo/maxresdefault.jpg"
+                "thumb": "https://img.youtube.com/vi/d2TZNhz2KHo/hqdefault.jpg"
             },
             {
                 "title": "Por que a evolução é verdade?",
@@ -130,50 +130,50 @@
                 "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
-        ],
-        "aluraTubesFavoritos":[
-            {
-                "title":"@MarceloHorikoshi",
-                "url": "https://github.com/MarceloHorikoshi",
-                "thumb": "https://github.com/MarceloHorikoshi.png"
-            },
-            {
-                "title":"@RodrigoViannini",
-                "url": "https://github.com/rodrigoviannini",
-                "thumb": "https://github.com/rodrigoviannini.png"
-            },
+        ]        
+    },
+    "aluraTubesFavoritos":[
+        {
+            "title":"@MarceloHorikoshi",
+            "url": "https://github.com/MarceloHorikoshi",
+            "thumb": "https://github.com/MarceloHorikoshi.png"
+        },
+        {
+            "title":"@RodrigoViannini",
+            "url": "https://github.com/rodrigoviannini",
+            "thumb": "https://github.com/rodrigoviannini.png"
+        },
 
-            {
-                "title":"@GuilhermeManzano",
-                "url": "https://github.com/GuilhermeManzano",
-                "thumb": "https://github.com/GuilhermeManzano.png"
-            },
+        {
+            "title":"@GuilhermeManzano",
+            "url": "https://github.com/GuilhermeManzano",
+            "thumb": "https://github.com/GuilhermeManzano.png"
+        },
 
-            {
-                "title":"@Eilem",
-                "url": "https://github.com/Eilem",
-                "thumb": "https://github.com/Eilem.png"
-            },
+        {
+            "title":"@Eilem",
+            "url": "https://github.com/Eilem",
+            "thumb": "https://github.com/Eilem.png"
+        },
 
-            {
-                "title":"@joaofv",
-                "url": "https://github.com/joaofv",
-                "thumb": "https://github.com/joaofv.png"
-            },
+        {
+            "title":"@joaofv",
+            "url": "https://github.com/joaofv",
+            "thumb": "https://github.com/joaofv.png"
+        },
 
-            {
-                "title":"@rytsutsumiuchi",
-                "url": "https://github.com/rytsutsumiuchi",
-                "thumb": "https://github.com/rytsutsumiuchi.png"
-            },
+        {
+            "title":"@rytsutsumiuchi",
+            "url": "https://github.com/rytsutsumiuchi",
+            "thumb": "https://github.com/rytsutsumiuchi.png"
+        },
 
-            {
-                "title":"@TheAlanK",
-                "url": "https://github.com/TheAlanK",
-                "thumb": "https://github.com/TheAlanK.png"
-            }
+        {
+            "title":"@TheAlanK",
+            "url": "https://github.com/TheAlanK",
+            "thumb": "https://github.com/TheAlanK.png"
+        }
 
-            
-        ]
-    }
+        
+    ]
 }
